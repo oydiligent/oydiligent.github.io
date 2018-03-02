@@ -60,9 +60,7 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/photo">相册</a></li>
-	        
-				<li><a href="/tags/随笔/">随笔</a></li>
+				<li><a href="/person">个人简介</a></li>
 	        
 			</ul>
 		</nav>
@@ -122,8 +120,6 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
@@ -141,14 +137,12 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 70%">
+				<ul style="width: 50%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/photo">相册</a></li>
-		        
-					<li style="width: 33.333333333333336%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 50%"><a href="/person">个人简介</a></li>
 		        
 				</ul>
 			</nav>
@@ -165,93 +159,60 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="about-about-me" class="article article-type-about  article-index" itemscope itemprop="blogPost">
+    <article id="post-newblog2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/20/about-me/">About Me</a>
+      <a class="article-title" href="/2018/02/27/newblog2/">Hexo + Github 创建属于自己的Blog（二）</a>
     </h1>
   
 
         
-        <a href="/2018/01/20/about-me/" class="archive-article-date">
-  	<time datetime="2018-01-20T06:25:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-20</time>
+        <a href="/2018/02/27/newblog2/" class="archive-article-date">
+  	<time datetime="2018-02-27T07:00:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-27</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>ssssssssd</p>
-<p>saddsf</p>
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote>
+<p>桃李无言，下自成蹊</p>
 </blockquote>
-<h1 id="ssssssss"><a href="#ssssssss" class="headerlink" title="ssssssss"></a>ssssssss</h1>
-      
+<h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><ul>
+<li>没有GitHub需注册GitHub</li>
+<li>安装：hexo-deployer-git</li>
+</ul>
+<blockquote>
+<p>npm install hexo-deployer-git –save</p>
+</blockquote>
+<p>备注：可能会出现安装不成功现象，采用<code>cnpm</code></p>
+<ul>
+<li>在根目录文件夹下打开 Git bash Here<br>设置user.name和user.email配置信息：</li>
+</ul>
+<blockquote>
+<p>git config –global user.name “你的GitHub用户名”<br>git config –global user.email “你的GitHub注册邮箱”</p>
+</blockquote>
+<p>生成ssh密钥文件：</p>
+<blockquote>
+<p>ssh-keygen -t rsa -C “你的GitHub注册邮箱”</p>
+</blockquote>
+<p>备注：具体操作查看<a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/26625249</a></p>
+<h3 id="配置deploy"><a href="#配置deploy" class="headerlink" title="配置deploy"></a>配置deploy</h3><pre><code>deploy:
+  type: git
+  repository: git@github.com:oydiligent/oydiligent.github.io.git
+  branch: master
+</code></pre><h3 id="执行"><a href="#执行" class="headerlink" title="执行"></a>执行</h3><pre><code>hexo clean 
+hexo g 
+hexo d
+</code></pre><h1 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h1><p>访问地址：<a href="https://oydiligent.github.io" target="_blank" rel="noopener">https://oydiligent.github.io</a></p>
+<blockquote>
+<p>备注：里面还遇到其他问题，具体问题后期写出来</p>
+</blockquote>
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/20/about-me/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-测试2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/21/测试2/">测试2</a>
-    </h1>
-  
-
-        
-        <a href="/2017/12/21/测试2/" class="archive-article-date">
-  	<time datetime="2017-12-21T07:03:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
       
 
       
@@ -264,11 +225,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">测试</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">cesi</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
         		</li>
       		
 		</ul>
@@ -278,7 +239,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/21/测试2/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/02/27/newblog2/">展开全文 >></a>
         </p>
       
 
@@ -308,161 +269,196 @@
 
 
   
-    <article id="test-测试创建一篇草稿文章" class="article article-type-test  article-index" itemscope itemprop="blogPost">
+    <article id="post-newblog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/21/测试创建一篇草稿文章/">测试创建一篇草稿文章</a>
+      <a class="article-title" href="/2018/02/27/newblog/">Hexo + Github 创建属于自己的Blog（一）</a>
     </h1>
   
 
         
-        <a href="/2017/12/21/测试创建一篇草稿文章/" class="archive-article-date">
-  	<time datetime="2017-12-21T06:43:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-21</time>
+        <a href="/2018/02/27/newblog/" class="archive-article-date">
+  	<time datetime="2018-02-27T02:14:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-27</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/21/测试创建一篇草稿文章/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/21/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2017/12/21/hello-world/" class="archive-article-date">
-  	<time datetime="2017-12-21T03:11:01.228Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2017/12/21/hello-world/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/21/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-测试" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/21/测试/">测试</a>
-    </h1>
-  
-
-        
-        <a href="/2017/11/21/测试/" class="archive-article-date">
-  	<time datetime="2017-11-21T07:03:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>ppadpaspdpapdasdppasdpa</p>
-<p>ss</p>
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote>
+<p>生命不止，折腾不止。。。</p>
 </blockquote>
-<h1 id="sdasdgdpfgdpfg"><a href="#sdasdgdpfgdpfg" class="headerlink" title="sdasdgdpfgdpfg"></a>sdasdgdpfgdpfg</h1><p>&lt;sdasdasdasdasdas</p>
+<h3 id="初始"><a href="#初始" class="headerlink" title="初始"></a>初始</h3><p>作为创建一个属于自己的blog，hexo文档可以大致查看一下，大致了解它的功能，若想深入研究也可以。GitHub是作为前端开发人员必不可少的学习资源来源，大量的开源代码是提升自身的有效途径。node环境安装就不需多说了。</p>
+<ul>
+<li><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo 文档</a></li>
+<li><a href="https://github.com" target="_blank" rel="noopener">GitHub 注册</a></li>
+<li>node安装环境</li>
+<li>git安装</li>
+</ul>
+<h3 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h3><blockquote>
+<p>可以按照官网创建属于本地的blog</p>
+</blockquote>
+<ul>
+<li>安装全局依赖： <code>npm install -g hexo-cli</code></li>
+<li>建站（本地）：<br>  ——初始化：<code>hexo init &lt;文件名&gt;</code><br>  ——进入目录：<code>cd &lt;文件名&gt;</code><br>  ——依赖安装：<code>npm install</code></li>
+</ul>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><blockquote>
+<p>对应官网，修改自己要的配置（或不改，更换主题后统一修改）</p>
+</blockquote>
+<h3 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h3><p>创建一篇文章：<code>hexo new [layout] &lt;title&gt;</code></p>
+<h3 id="本地运行"><a href="#本地运行" class="headerlink" title="本地运行"></a>本地运行</h3><p>启动服务器：<code>hexo server</code><br>默认情况下，访问网址为：<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></p>
+<h3 id="主题更换"><a href="#主题更换" class="headerlink" title="主题更换"></a>主题更换</h3><blockquote>
+<p>本人的主题采用的是yilia，具体<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">地址链接</a></p>
+</blockquote>
+<ul>
+<li><p>安装：<br>在当前根目录下打开git bash here，执行命令<code>git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</code></p>
+</li>
+<li><p>配置：<br>修改hexo根目录下的 <code>_config.yml ： theme: yilia</code><br>修改主题内容配置：<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">查看原链接</a><br>附带我的配置：</p>
+</li>
+</ul>
+<pre><code>
+    # Header
+    menu:
+      主页: /
+      相册: photo
+      随笔: /tags/随笔/
+
+    # SubNav
+    subnav:
+      github: "#"
+      weibo: "#"
+      rss: "#"
+      zhihu: "#"
+      #qq: "#"
+      #weixin: "#"
+      #jianshu: "#"
+      #douban: "#"
+      #segmentfault: "#"
+      #bilibili: "#"
+      #acfun: "#"
+      #mail: "mailto:litten225@qq.com"
+      #facebook: "#"
+      #google: "#"
+      #twitter: "#"
+      #linkedin: "#"
+
+    rss: /atom.xml
+
+    # 是否需要修改 root 路径
+    # 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
+    # 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
+    root: /
+
+    # Content
+
+    # 文章太长，截断按钮文字
+    excerpt_link: more
+    # 文章卡片右下角常驻链接，不需要请设置为false
+    show_all_link: '展开全文'
+    # 数学公式
+    mathjax: false
+    # 是否在新窗口打开链接
+    open_in_new: false
+
+    # 打赏
+    # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
+    reward_type: 0
+    # 打赏wording
+    reward_wording: '谢谢你请我吃糖果'
+    # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
+    alipay:
+    # 微信二维码图片地址
+    weixin:
+
+    # 目录
+    # 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
+    toc: 1
+    # 根据自己的习惯来设置，如果你的目录标题习惯有标号，置为true即可隐藏hexo重复的序号；否则置为false
+    toc_hide_index: true
+    # 目录为空时的提示
+    toc_empty_wording: '目录，不存在的…'
+
+    # 是否有快速回到顶部的按钮
+    top: true
+
+    # Miscellaneous
+    baidu_analytics: ''
+    google_analytics: ''
+    favicon: /favicon.png
+
+    #你的头像url
+    avatar: /img/header-photo.jpg
+
+    #是否开启分享
+    share_jia: true
+
+    #评论：1、多说；2、网易云跟帖；3、畅言；4、Disqus；5、Gitment
+    #不需要使用某项，直接设置值为false，或注释掉
+    #具体请参考wiki：https://github.com/litten/hexo-theme-yilia/wiki/
+
+    #1、多说
+    duoshuo: false
+
+    #2、网易云跟帖
+    wangyiyun: false
+
+    #3、畅言
+    changyan_appid: false
+    changyan_conf: false
+
+    #4、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
+    disqus: false
+
+    #5、Gitment
+    gitment_owner: false      #你的 GitHub ID
+    gitment_repo: ''          #存储评论的 repo
+    gitment_oauth:
+      client_id: ''           #client ID
+      client_secret: ''       #client secret
+
+    # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
+    style:
+      # 头像上面的背景颜色
+      header: '#4d4d4d'
+      # 右滑板块背景
+      slider: 'linear-gradient(200deg,#a0cfe4,#e8c37e)'
+
+    # slider的设置
+    slider:
+      # 是否默认展开tags板块
+      showTags: false
+
+    # 智能菜单
+    # 如不需要，将该对应项置为false
+    # 比如
+    #smart_menu:
+    #  friends: false
+    smart_menu:
+      innerArchive: '所有文章'
+      friends: '友链'
+      aboutme: '关于我'
+
+    friends:
+      友情链接1: "#"
+      友情链接2: "#"
+      友情链接3: "#"
+      友情链接4: "#"
+
+    aboutme: 很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+
+</code></pre> 
+
+<p>其中，当初自己遇到的一个小问题是，更换头像：首先在找到当前主题下的source目录，将自己要用的头像图片放在img目录下<br><code>#你的头像url
+avatar: /img/header-photo.jpg</code></p>
+<p>###重启blog </p>
+<pre><code>hexo clean
+hexo g
+hexo s
+</code></pre><p>访问地址：<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></p>
 
       
 
@@ -471,11 +467,26 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/21/测试/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/02/27/newblog/">展开全文 >></a>
         </p>
       
 
@@ -598,11 +609,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">测试</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">cesi</a>
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
             
             <div class="clearfix"></div>
@@ -654,27 +665,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+              <a href="#" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
+              <a href="#" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
+              <a href="#" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
+              <a href="#" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
             </li>
           
         </ul>
@@ -685,7 +688,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">刚开始做&lt;br&gt;&lt;br&gt;很多东西要慢慢迁移上来&lt;br&gt;没实现的功能多多见谅&lt;br&gt;谢谢大家</div>
   	  	
     	</section>
     
